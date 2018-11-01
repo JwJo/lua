@@ -1,0 +1,7 @@
+tonumber可以把十六进制字符串转换成十进制
+
+local fk = "ABCD"
+print(tonumber(fk,16))
+
+
+输出：43981
