@@ -14,3 +14,6 @@ kk = string.sub(kk,1,3)
 print(kk - 1)  --可以运算
 
 截取到0x 就是十六进制
+
+
+local kk = ""  --表示定义变量不赋值
