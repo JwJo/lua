@@ -1,0 +1,16 @@
+string.sub截取到的是什么类型就是什么类型
+
+
+local kk = 1234
+kk = string.sub(kk,1,3)
+print(kk - 1)
+
+kk = "0xFFFF"
+kk = string.sub(kk,3,4)
+print(kk - 1)  --报错kk：string类型
+
+kk = "0xFFFF"
+kk = string.sub(kk,1,3)
+print(kk - 1)  --可以运算
+
+截取到0x 就是十六进制
