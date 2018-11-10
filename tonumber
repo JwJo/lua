@@ -1,7 +1,7 @@
 tonumber可以把十六进制字符串转换成十进制
 
 local fk = "ABCD"
-print(tonumber(fk,16))
-
+fk = tonumber(fk,16)  //参数1：要转换的目标数字，或者字符串  ,参数2：指定参数1的进制
+print(fk)
 
 输出：43981
