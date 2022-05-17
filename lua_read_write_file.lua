@@ -1,7 +1,7 @@
 function make()
-	dofile("F:\\Work\\车\\6\\昌河福瑞达   24C04   调3万公里  带表号\\1.lua")
+	dofile("F:\\1.lua")
 
-	local binfile = "F:\\Work\\车\\6\\昌河福瑞达   24C04   调3万公里  带表号\\30000.BIN"
+	local binfile = "file.bin"
 	local fd = io.open(binfile,"rb")
 	local fileStr = fd:read("*a")
 	fd:close()
@@ -24,7 +24,7 @@ function make()
 	local fbstr = FindKm(ReadOutStr, string.len(ReadOutStr))
 	print("old km =",fbstr)
 
-	local new_value = 123456		--新公里数
+	local new_value = 123456		
 	local  Newstr =ReplaceKm(ReadOutStr, string.len(ReadOutStr),new_value)
 	--print(fbstr)
 	km =FindKm(Newstr, string.len(Newstr))
